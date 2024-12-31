@@ -2,6 +2,8 @@
 # AI Cold Caller
 
 The AI Cold Caller is an automated system designed to engage with customers over the phone, simulate sales conversations, and collect analytics based on customer interactions. It uses AI models for speech recognition, sentiment analysis, conversation generation, and text-to-speech synthesis.
+This is a type of SAAS idea that a one-person startup can run as one rents the agents to agency founders and other businesses requiring calling to convert leads into potential customers. It can be further modified to set up meetings on the calendar and recheck leads that have turned cold.
+What I have implemented is a very low-level prototype of the whole idea, considering that this has a lot of technicality to implement but when done can have great potential
 
 ## Features
 
@@ -31,7 +33,7 @@ The AI Cold Caller requires the following Python libraries:
 Install the dependencies using `pip`:
 
 ```bash
-pip install torch transformers whisper pyaudio numpy pandas gtts playsound
+pip install requirements.txt
 ```
 
 ## Setup
@@ -50,7 +52,7 @@ pip install torch transformers whisper pyaudio numpy pandas gtts playsound
 4. **Run the AI Cold Caller**:
 
    ```bash
-   python ai_cold_caller.py
+   python genAi.py
    ```
 
 5. **Logging**: The system logs all interactions, analytics, and audio recordings in the `call_logs` directory by default. You can modify the log directory path by passing the `log_dir` parameter during initialization.
